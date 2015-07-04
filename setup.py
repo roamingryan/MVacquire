@@ -13,7 +13,7 @@ mvinclude = mvbase
 mvlib = os.path.join(mvbase, 'lib')
 bits,foo = platform.architecture()
 if bits == '64bit':
-    mvlib = os.path.join(mvlib, r'win\x64')
+    mvlib = os.path.join(mvlib, r'x86_64')
 
 ext_modules = [Extension("mv",
                         ["_mvDeviceManager.pyx"],
